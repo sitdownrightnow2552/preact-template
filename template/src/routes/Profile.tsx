@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-import * as style from './style.scss';
 import { useParams } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 const Profile: FunctionalComponent = () => {
   const { user = 'me' } = useParams();
@@ -24,14 +24,14 @@ const Profile: FunctionalComponent = () => {
   };
 
   return (
-    <div className={style.profile}>
+    <div className="p-16 w-full h-full">
       <h1>Profile: {user}</h1>
       <p>This is the user profile for a user named {user}.</p>
 
       <div>Current time: {new Date(time).toLocaleString()}</div>
 
       <p>
-        <button onClick={increment}>Click Me</button>
+        <Button onClick={increment}>Click Me</Button>
         Clicked {count} times.
       </p>
     </div>
