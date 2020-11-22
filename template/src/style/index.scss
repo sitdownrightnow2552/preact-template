@@ -1,23 +1,9 @@
 @import 'tailwind';
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background: #fafafa;
-  font-family: 'Helvetica Neue', arial, sans-serif;
-  font-weight: 400;
-  color: #444;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#app {
-  height: 100%;
-}
+@import '~fontsource-roboto/latin-300.css';
+@import '~fontsource-roboto/latin-400.css';
+@import '~fontsource-roboto/latin-500.css';
+@import '~fontsource-roboto/latin-700.css';
+@import '~fontsource-roboto/vietnamese-300.css';
+@import '~fontsource-roboto/vietnamese-400.css';
+@import '~fontsource-roboto/vietnamese-500.css';
+@import '~fontsource-roboto/vietnamese-700.css';
